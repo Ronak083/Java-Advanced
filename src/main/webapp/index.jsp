@@ -2,16 +2,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Index</title>
 </head>
 <body>
 <h1><%= "Hello World!" %>
 </h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
-<%! String message(){
-    return "I love U";
-}%>
-<%= message() %>
+<br/>It's home <br/>
+<a href="<%=request.getContextPath() %>/Servlet?page=login">Login</a><br/>
+<a href="<%=request.getContextPath() %>/Servlet?page=Signup">Sigh Up</a><br/>
+<a href="<%=request.getContextPath() %>/Servlet?page=index">Index</a><br/>
 </body>
 </html>
