@@ -7,9 +7,17 @@
 <body>
 <h1><%= "Hello World!" %>
 </h1>
-<br/>It's home <br/>
-<a href="<%=request.getContextPath() %>/Servlet?page=login">Login</a><br/>
-<a href="<%=request.getContextPath() %>/Servlet?page=Signup">Sigh Up</a><br/>
-<a href="<%=request.getContextPath() %>/Servlet?page=index">Index</a><br/>
+<br/>Form <br/>
+<form action="submit.jsp" method="post">
+    Name: <input type="text" name="name"><br/>
+    Gender: <input type = "radio" name="gender" value="male">Male
+    <input type = "radio" name="gender" value="female">female<br/>
+
+    Language: <input type = "checkbox" name="lang" value="English">English
+    <input type = "checkbox" name="lang" value="Hindi">Hindi
+    <input type = "checkbox" name="lang" value="German">German<br/>
+    <input type="submit" value="Submit">
+
+</form>
 </body>
 </html>
