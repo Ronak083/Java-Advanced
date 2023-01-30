@@ -26,5 +26,6 @@ Language: <%
 }
 %>
 <br/>
+Country: <%= request.getParameter("country")%><br/>
 </body>
 </html>
