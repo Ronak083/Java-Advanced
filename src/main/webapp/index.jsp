@@ -18,6 +18,7 @@
     <input type = "checkbox" name="lang" value="Hindi">Hindi
     <input type = "checkbox" name="lang" value="German">German<br/>
 
+
     Country: <select    name = "country">
     <option value="India">India</option>
     <option value="USA">USA</option>
